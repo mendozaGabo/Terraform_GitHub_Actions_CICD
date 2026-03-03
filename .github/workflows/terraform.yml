@@ -17,14 +17,15 @@ jobs:
         # Checkout the repository to the GitHub Actions runner        
         - name: Checkout                                   
           uses: actions/checkout@v3
-    # Runs a single command using the runners shell     
+    # Runs a single command using the runners shell    
+        - name: Set up Terraform
+          uses: hashicorp/setup-terraform@v1
+          
         - name: 'Terraform init' 
           id: init                                   
           run: |                                     
             terraform init                           
 
-        - name: Set up Terraform
-          uses: hashicorp/setup-terraform@v1
         
         - name: 'Terraform plan'                                   
           id: plan                                   
