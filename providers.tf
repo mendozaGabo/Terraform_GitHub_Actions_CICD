@@ -8,7 +8,7 @@ terraform {
     bucket         = "gabriel-s3bucket"
     key            = "globalstate/s3/terraform.tfstate"
     region         = "eu-west-1"
-    dynamodb_table = "gabriel-dblocks"
+    dynamodb_table = "gabriel-date-dblocks"
     encrypt        = true
   }
 }
