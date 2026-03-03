@@ -6,4 +6,4 @@ First Execution
 
 second demo
 
-finished the activity (again)
+finished the activity (again) or not
